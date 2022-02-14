@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap');
+
+
+body{
+    background: black;
+}
+
+
+/*  nav  */
+.nav-img{
+    width: 70px;
+    position: relative;
+    bottom: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+nav{
+    font-family: Bahnschrift;
+    font-size: 25px;
+    
+
+}
+
+#navbarNav ul li a{
+    color: white;
+    display: block;
+    padding: 0px 20px;
+    text-decoration: none;
+    position: relative;
+    top: 10px;
+
+}
+
+#navbarNav ul li a:hover{
+    color: orange;
+ }
+
+/* carrousel */
+
+.contenedorc{
+    background:orange;
+}
+
+.img-carrousel{
+    width: 300px;
+}
+
+/* Mangas */
+
+.title-manga{
+    margin: 40px 90px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    
+}
+
+
+.mangas{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 70px;
+    
+    
+}
+.card-text{
+    color: white;
+    font-size: 18px;
+    font-family: Bahnschrift ;
+}
+
+
+.card{
+    background-color: rgb(51,51,51);
+ 
+    overflow: hidden;
+    box-shadow: 0px 1px 10px rgba(255, 254, 254, 0.2);
+    transition: all 400ms ease;
+    margin: 15px;
+
+}
+
+.card:hover{
+    box-shadow: 5px 5px 20px rgba(214, 214, 212, 0.3);
+    transform: translateY(-3%);
+}
+
+/* nOTICIAS */
+
+.noticias {
+    width: 600px;
+    margin: 0 90px;
+    color: white;
+}
+
+.parrafo-noti{
+    position: relative;
+    left: 250px;
+    bottom: 150px;
+}
+
+
+
+/* Recomendaciones */
+
+.recomendaciones{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 70px;
+}
+
+
+     
+
+.linea{
+    width: 90%;
+    border: 2px solid orange;
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 70px;
+}
+
+
+.datos{
+    margin: 40px 90px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: 20px;
+}
+
+/*  MEDIA 1 */
+@media (max-width: 1090px) {
+    
+    .mangas{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        margin: 70px;
+        
+        
+    }
+
+    
+    .title-manga-2{
+        font-family: 'Rowdies', cursive;
+        font-size: 30px;
+    }
+
+
+
+    .recomendaciones{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        margin: 70px;
+    }
+
+}
+/*  MEDIA 2 */
+@media (max-width: 710px) {
+    
+    .mangas{
+        display: grid;
+        grid-template-columns: 1fr  ;
+        margin: 70px;
+        
+        
+    }
+
+
+    .text1{
+        font-size: 18px;
+        color: white;
+        font-family: 'Inconsolata', monospace;
+    }
+    
+    .title-manga-2{
+        font-family: 'Rowdies', cursive;
+        margin: 0px 0px;
+        display: flex;
+        justify-content: space-between;
+        color: white;
+        font-size: 30px;
+    }
+
+   
+    .recomendaciones{
+        display: grid;
+        grid-template-columns: 1fr ;
+        margin: 70px;
+    }
+
+    .noticias {
+       display: none;
+    }
+    
+    
+
+
+}
+
+
+
+/*  MEDIA 4  */
+@media (max-width: 375px) {
+    
+    .mangas{
+        display: grid;
+        grid-template-columns: 1fr  ;
+        margin: 70px;
+        justify-content: center;
+        
+
+        }
+        
+        .title-manga-2{
+            font-family: 'Rowdies', cursive;
+            margin: 0px 0px;
+            display: flex;
+            justify-content: space-between;
+            color: white;
+            font-size: 20px;
+        }
+    
+    
+        .recomendaciones{
+            display: grid;
+            grid-template-columns: 1fr ;
+            margin: 70px;
+            justify-content: center;
+        }
+      
+    
+        
+        
+    }
+
+    
+    
